@@ -1,13 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basavaraj Profile</title>
-    <script type="module" crossorigin src="/Basavaraj_Profile/assets/index-CkeMYwwy.js"></script>
-    <link rel="stylesheet" crossorigin href="/Basavaraj_Profile/assets/index-C0v2lfwt.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for smoother visuals */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Small nav / link helpers (safe if you use them later) */
+a {
+  @apply transition-colors duration-150;
+}
+
+/* Section headers */
+section h2 {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+/* Buttons */
+button,
+a[class*="px-"][class*="py-"] {
+  @apply transition duration-200 ease-in-out;
+}
