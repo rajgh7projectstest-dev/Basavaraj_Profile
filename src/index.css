@@ -1,7 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   scroll-behavior: smooth;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  @apply bg-white text-gray-900 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+nav a {
+  @apply text-gray-700 transition-colors duration-200;
+}
+nav a:hover {
+  @apply text-blue-600;
+}
+
+section h2 {
+  @apply text-3xl font-bold text-gray-900;
+}
+
+button,
+a[class*="px-"][class*="py-"] {
+  @apply transition duration-200 ease-in-out;
+}
