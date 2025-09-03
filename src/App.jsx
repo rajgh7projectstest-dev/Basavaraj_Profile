@@ -1,74 +1,104 @@
-import React from "react";
-
-function App() {
+// src/App.jsx
+export default function App() {
   return (
-    <div className="font-sans scroll-smooth">
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-white shadow z-50">
-        <div className="container mx-auto flex justify-between items-center p-4">
-          <h1 className="text-xl font-bold">Basavaraj</h1>
-          <div className="space-x-6">
-            <a href="#home" className="hover:text-blue-600">Home</a>
-            <a href="#about" className="hover:text-blue-600">About</a>
-            <a href="#showcase" className="hover:text-blue-600">Showcase</a>
-            <a href="#connect" className="hover:text-blue-600">Connect</a>
-          </div>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <section id="home" className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-50 to-white text-center px-6">
-        <h2 className="text-4xl font-bold mb-4">Hi, I’m Basavaraj 👋</h2>
-        <p className="text-lg text-gray-700 max-w-2xl">
-          Product manager, builder, and mentor exploring how AI and education can
-          come together to create real-world impact.
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center font-sans">
+      {/* Hero Section (UPDATED content) */}
+      <section className="w-full max-w-3xl text-center py-20 px-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Building practical AI solutions &amp; mentoring the next generation
+        </h1>
+        <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+          I’m Basavaraj — a product manager and builder with 15+ years in startups.
+          Today I explore how AI and education can combine to create real-world impact.
+          I build small prototypes, mentor learners, and share practical lessons you can apply.
         </p>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="min-h-screen flex flex-col justify-center px-6 bg-white">
-        <h2 className="text-3xl font-bold mb-6">About Me</h2>
-        <p className="text-lg text-gray-700 mb-4 max-w-3xl">
-          My journey began in the startup ecosystem, where I learned that
-          execution matters far more than just ideas. Over the last 15+ years,
-          I’ve worn many hats — from business owner to product manager —
-          building solutions, leading teams, and navigating the challenges of
-          growth.
-        </p>
-        <p className="text-lg text-gray-700 mb-4 max-w-3xl">
-          Along the way, I realized my strength lies in simplifying complex
-          problems and mentoring others who are just starting out. That’s what
-          led me to my current focus: <strong>AI and education</strong>. I’m
-          building prototypes, exploring practical use cases, and sharing
-          insights openly so others can learn and grow with me.
-        </p>
-        <p className="text-lg text-gray-700 max-w-3xl">
-          Looking ahead, I see myself not just as a builder, but as a{" "}
-          <strong>bridge between technology, business, and education</strong> —
-          someone who can help shape how the next generation learns and creates
-          with AI.
-        </p>
-      </section>
-
-      {/* Showcase Section */}
-      <section id="showcase" className="min-h-screen flex flex-col justify-center px-6 bg-gray-50">
-        <h2 className="text-3xl font-bold mb-6">Showcase</h2>
-        <p className="text-lg text-gray-700">Coming soon: my projects, blogs, and experiments.</p>
-      </section>
-
-      {/* Connect Section */}
-      <section id="connect" className="min-h-screen flex flex-col justify-center px-6 bg-white">
-        <h2 className="text-3xl font-bold mb-6">Let’s Connect</h2>
-        <p className="text-lg text-gray-700 mb-4">I’d love to hear from you! Reach me at:</p>
         <a
-          href="mailto:yourname@example.com"
-          className="text-blue-600 font-semibold hover:underline"
+          href="#about"
+          className="bg-teal-600 text-white px-6 py-3 rounded-lg shadow hover:bg-teal-700"
         >
-          yourname@example.com
+          Explore my journey
         </a>
       </section>
+
+      {/* Value Section (unchanged structure/content from initial version) */}
+      <section className="w-full max-w-4xl grid md:grid-cols-3 gap-6 px-6 py-16">
+        <div className="border rounded-xl p-6 shadow-sm hover:shadow-md">
+          <h3 className="font-semibold mb-2">Mini Case Studies</h3>
+          <p className="text-gray-600 text-sm">
+            Small AI prototypes, experiments, and what worked (or didn’t).
+          </p>
+        </div>
+        <div className="border rounded-xl p-6 shadow-sm hover:shadow-md">
+          <h3 className="font-semibold mb-2">Reflections</h3>
+          <p className="text-gray-600 text-sm">
+            Insights on AI × Education × Business — simple, practical lessons.
+          </p>
+        </div>
+        <div className="border rounded-xl p-6 shadow-sm hover:shadow-md">
+          <h3 className="font-semibold mb-2">Community Projects</h3>
+          <p className="text-gray-600 text-sm">
+            Stories from mentoring and collaborating with students &amp; peers.
+          </p>
+        </div>
+      </section>
+
+      {/* About Section (UPDATED content - Version 2 storytelling) */}
+      <section className="w-full max-w-3xl text-center px-6 py-16">
+        <h2 className="text-2xl font-bold mb-4">About</h2>
+        <div className="text-gray-700 leading-relaxed space-y-4 text-left">
+          <p>
+            My journey began in the startup ecosystem, where I learned that execution
+            matters far more than just ideas. Over the last 15+ years, I’ve worn many
+            hats — from business owner to product manager — building solutions, leading
+            teams, and navigating the challenges of growth.
+          </p>
+
+          <p>
+            Along the way, I realized my strength lies in simplifying complex problems
+            and mentoring others who are just starting out. That’s what led me to my
+            current focus: <strong>AI and education</strong>. I’m building prototypes,
+            exploring practical use cases, and sharing insights openly so others can
+            learn and grow with me.
+          </p>
+
+          <p>
+            Looking ahead, I see myself not just as a builder, but as a{' '}
+            <strong>bridge between technology, business, and education</strong> — someone
+            who can help shape how the next generation learns and creates with AI.
+          </p>
+        </div>
+      </section>
+
+      {/* Newsletter Section (unchanged) */}
+      <section id="newsletter" className="w-full max-w-md text-center px-6 py-20">
+        <h2 className="text-2xl font-bold mb-4">Get Insights</h2>
+        <p className="text-gray-600 mb-6">
+          Once a month, I share practical takeaways — no fluff, just lessons you can apply.
+        </p>
+        <form className="flex flex-col sm:flex-row gap-4">
+          <input
+            type="email"
+            placeholder="Your email"
+            className="flex-1 border rounded-lg px-4 py-2"
+          />
+          <button
+            type="submit"
+            className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700"
+          >
+            Subscribe
+          </button>
+        </form>
+      </section>
+
+      {/* Footer (unchanged) */}
+      <footer className="w-full text-center text-gray-500 text-sm py-6">
+        <p>
+          Built to share, not to sell. |{' '}
+          <a href="https://www.linkedin.com" className="underline" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
-
-export default App;
